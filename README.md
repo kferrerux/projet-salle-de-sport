@@ -1,10 +1,11 @@
 # Projet Salle de Sport (Quatuor / 2024)
 
-# Contexte du projet
+![001](https://github.com/kferrerux/projet-salle-de-sport/assets/77007630/5f723f22-4bc3-4618-9c84-f5eab2ee2835)
+
+# Contexte du projet:
 Vous décidez de vous inscrire dans une nouvelle salle de sports qui vient d'ouvrir non loin de chez vous. Vous faites la rencontre du gérant et après quelques échanges, vous parlez de votre profession. Vous proposez de lui faire le** site internet de sa salle de sport**. Il vous explique qu'il a un petit budget mais que grâce à une connaissance il possède une maquette, un cahier des charges ainsi que les images. Vous aurez à réaliser ++un devis, crée les pages web en HTML/CSS/JS.++
 
-# ++Le client à besoin :++
-
+# Les besoins du client :
 D'une vérification lors du formulaire de contact, avoir les bonnes saisies aux bons endroits (Regex) . Un menu burger pour mobile.
 **Un Slider**
 1 Page Accueil 1 Page Présentation 1 Page Contact 1 Page 404 pour les liens qui ne marcheront pas ou qui seraient en maintenance
