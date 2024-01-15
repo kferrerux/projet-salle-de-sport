@@ -41,3 +41,88 @@ li:hover {
 .btn {
     border-radius: 0;
 }
+
+.radius {
+    border-style: none;
+    border-radius: 0;
+}
+
+#card01 {
+    border: none;
+    background:url('/ressources/images/activites/bg_activite_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#card02 {
+    border: none;
+    background:url('/ressources/images/activites/bg_activite_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+#card03 {
+    border: none;
+    background:url('/ressources/images/activites/bg_activite_3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#card04 {
+    border: none;
+    background:url('/ressources/images/activites/bg_activite_4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#card01 img {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+#card02 img {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+#card03 img {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+#card04 img {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.hr-white {
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.hr-hover {
+    width: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.hr-defaut {
+    width: 20%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.footer-img {
+    margin: 20px;
+    width: 120px;
+    height: 36px;
+}
