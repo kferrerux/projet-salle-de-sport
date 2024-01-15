@@ -3,9 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://kit.fontawesome.com/a95fff360e.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Salle de Sport - Accueil</title>
 </head>
 <body>
-    Test de premier commit
+<!-- Ici on définie ce qui compose la partie "haute" (logo/nav) -->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img id="logo" src="ressources/images/logo.png" alt="Logo du site">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">L'EQUIPE</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">LES ACTIVITES</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">NOS OFFRES</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">LES ACTIVITES</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">PLANNING</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">LE BLOG</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                <div class="phone">
+                <li class="nav-item">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                05 59 47 84 18
+                </li>
+                </div>
+                <div class="social-media">
+                <ul> 
+                <li>
+                <a href="">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                </li>
+                <li>
+                <a href="">
+                <i class="fa-brands fa-instagram"></i>
+                </a>
+                </li>
+                <li>
+                    <a href="">
+                    <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    </li>
+                </div>
+          
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Link
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul> -->
+                <!-- </li> -->
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <div>
+<!-- BOOTSTRAP CAROUSEL -->
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="ressources/images/slider/slide_1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="ressources/images/slider/slide_2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="ressources/images/slider/slide_3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        </div>
+    </header>
+<!-- fin de la partie header -->
+
+<!-- Ici on commence à définir les différentes sections qui composent le site -->
+    <main class="">
+        <secion class="section0">
+        <h2>LE STUDIO SPORT & COACHING</h2>
+        <h2>SALLE DE SPORT, FITNESS</h2>
+        <p>
+        Aujourd'hui, beaucoup de salle de sport vendent des abonnements 
+        où vous avez accès à tous les services du club (cours collectifs, plateu musculation... )
+        mais combien vous connaissent au point de connaitre vos êtes en bonne voie pour les atteindres ?</p>
+        
+        <p>Beaucoup de gens estiment être livrés à eux même dans ce genre de salle. Nous avons choisi la direction diamétralement opposée ! Notre seule priorité ? La qualité du service. Notre nouveau concept de salle de sport SUR MESURE trouve une solution adaptée à votre budget et vos disponibilités.
+        Nous oeuvrons pour créer une ambiance conviviale tout en vous aidant à vous dépasser dans l'effort et ce, pou maximiser vos chances d'obtenir des résultats. Les sportifs de Haut-Niveau ont des entraîneurs et des préparateurs physiques pour atteindre leurs objectifs. Alors, pourquoi pas vous ?</p>
+
+        <p>Vous voulez plus de Motivation, plus de Résultats, plus vite... Alors bienvenue au Studio Sport & Coaching!</p>
+        
+        </section>
+
+        <section class="section1">
+        <h2>LES ACTIVITÉS PROPOSÉES AU STUDIO SPORT BIARRITZ</h2>
+        </section>
+
+        <section class="section2">
+        <h2>NOS DERNIÈRES ACTUALITÉS</h2>
+        </section>
+
+        <section class="section3">
+        <h2>STUDIO SPORT & COACHING, NOS PARTENAIRES</h2>
+        </section>
+    </main>
+<!-- fin de la main et des différentes sections -->
+<!-- Le footer du site -->
+    <footer>
+    </footer>
+<!-- fin du footer -->
 </body>
 </html>
