@@ -15,61 +15,36 @@
 </head>
 <body>
 <!-- Ici on définie ce qui compose la partie "haute" (logo/nav) -->
-    <header id="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-transparent w-100 position-absolute z-3">
         <div class="container-fluid">
-            <img id="logo" src="ressources/images/logo.png" alt="Logo du site">
+            <a href="index.html"><img id="logo" src="ressources/images/logo.png" alt="Logo du site"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <div class="fs-5 collapse navbar-collapse text-white d-flex flex-row justify-content-around align-items-center" id="navbarScroll">
+                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">L'EQUIPE</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">LES ACTIVITES</a>
+                <a class="nav-link text-white" aria-current="page" href="#">L'EQUIPE</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">NOS OFFRES</a>
+                <a class="nav-link text-white" href="#">LES ACTIVITES</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">LES ACTIVITES</a>
+                <a class="nav-link text-white" href="#">NOS OFFRES</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">PLANNING</a>
+                <a class="nav-link text-white" href="#">LES ACTIVITES</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">LE BLOG</a>
+                <a class="nav-link text-white" href="#">PLANNING</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link text-white" href="#">LE BLOG</a>
                 </li>
-                <div class="phone">
                 <li class="nav-item">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                05 59 47 84 18
+                <a class="nav-link text-white" href="#">CONTACT</a>
                 </li>
-                </div>
-                <div class="social-media">
-                <ul> 
-                <li>
-                <a href="">
-                  <i class="fa-brands fa-square-facebook"></i>
-                </a>
-                </li>
-                <li>
-                <a href="">
-                <i class="fa-brands fa-instagram"></i>
-                </a>
-                </li>
-                <li>
-                    <a href="">
-                    <i class="fa-solid fa-envelope"></i>
-                    </a>
-                    </li>
-                </div>
-          
                 <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Link
@@ -82,6 +57,21 @@
                     </ul> -->
                 <!-- </li> -->
                 </ul>
+                <div id="phone">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  05 59 47 84 18
+                </div>
+                <div id="socials">
+                  <a href="facebook.com">
+                  <i class="fa-brands fa-square-facebook"></i>
+                  </a>
+                  <a href="instagram.com">
+                  <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="contact.html">
+                  <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </div>
             </div>
         </div>
         </nav>
@@ -94,6 +84,8 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
               <div class="carousel-inner">
+                <h2 class="fs-4 z-1 position-absolute my-1 top-50 start-50 translate-middle text-white">2 inscriptions simultanées = Un 3ème abonnement de 6 mois offert!</h2>
+                <button type="button" class="z-1 position-absolute my-5 top-50 start-50 translate-middle btn btn-outline-light">PLUS D'INFOS</button>
                 <div class="carousel-item active">
                   <img src="ressources/images/slider/slide_1.jpg" class="d-block w-100" alt="...">
                 </div>
@@ -119,7 +111,7 @@
 
 <!-- Ici on commence à définir les différentes sections qui composent le site -->
     <main class="">
-        <secion class="section0">
+        <section class="w-100 p-5">
         <h2>LE STUDIO SPORT & COACHING</h2>
         <h2>SALLE DE SPORT, FITNESS</h2>
         <p>
@@ -134,15 +126,15 @@
         
         </section>
 
-        <section class="section1">
+        <section class="w-100 p-5">
         <h2>LES ACTIVITÉS PROPOSÉES AU STUDIO SPORT BIARRITZ</h2>
         </section>
 
-        <section class="section2">
+        <section class="w-100 p-5">
         <h2>NOS DERNIÈRES ACTUALITÉS</h2>
         </section>
 
-        <section class="section3">
+        <section class="w-100 p-5">
         <h2>STUDIO SPORT & COACHING, NOS PARTENAIRES</h2>
         </section>
     </main>
