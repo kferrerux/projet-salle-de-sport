@@ -49,28 +49,28 @@ li:hover {
 
 #card01 {
     border: none;
-    background:url('/ressources/images/activites/bg_activite_1.jpg');
+    background:url('../ressources/images/activites/bg_activite_1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #card02 {
     border: none;
-    background:url('/ressources/images/activites/bg_activite_2.jpg');
+    background:url('../ressources/images/activites/bg_activite_2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     }
 
 #card03 {
     border: none;
-    background:url('/ressources/images/activites/bg_activite_3.jpg');
+    background:url('../ressources/images/activites/bg_activite_3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #card04 {
     border: none;
-    background:url('/ressources/images/activites/bg_activite_4.jpg');
+    background:url('../ressources/images/activites/bg_activite_4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
