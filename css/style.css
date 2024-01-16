@@ -138,3 +138,7 @@ li:hover {
     width: 200px;
     height: 120px;
 }
+
+.gold {
+    color: rgb(255, 162, 0);
+}
