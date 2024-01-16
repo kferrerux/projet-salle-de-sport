@@ -16,68 +16,55 @@
 <body>
 <!-- Ici on définie ce qui compose la partie "haute" (logo/nav) -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-transparent w-100 position-absolute z-3">
-        <div class="container-fluid">
-            <a href="index.html"><img id="logo" src="ressources/images/logo.png" alt="Logo du site"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="fs-5 collapse navbar-collapse text-white d-flex flex-row justify-content-around align-items-center" id="navbarScroll">
-                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="#">L'EQUIPE</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link text-white" href="#">LES ACTIVITES</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link text-white" href="#">NOS OFFRES</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link text-white" href="#">LES ACTIVITES</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link text-white" href="#">PLANNING</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link text-white" href="#">LE BLOG</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link text-white" href="#">CONTACT</a>
-                </li>
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Link
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul> -->
-                <!-- </li> -->
-                </ul>
-                <div id="phone">
-                  <i class="fa-solid fa-mobile-screen-button"></i>
-                  05 59 47 84 18
-                </div>
-                <div id="socials">
-                  <a href="facebook.com">
-                  <i class="fa-brands fa-square-facebook"></i>
-                  </a>
-                  <a href="instagram.com">
-                  <i class="fa-brands fa-instagram"></i>
-                  </a>
-                  <a href="contact.html">
-                  <i class="fa-solid fa-envelope"></i>
-                  </a>
-                </div>
+      <nav class="fs-5 navbar navbar-expand-lg bg-transparent position-absolute z-2 w-100 p-3">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" src="ressources/images/logo.png" alt="Logo du site"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            style="color: white">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">L'EQUIPE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">LES ACTIVITÉS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">NOS OFFRES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">LE BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">CONTACT</a>
+              </li>
+            </ul>
+            <div id="phone" class="mx-5">
+              <i class="fa-solid fa-mobile-screen-button text-white" style="font-size: smaller;"> 05 59 47 84 18</i>
             </div>
+            <div class="mx-5" id="socials">
+              <a href="facebook.com">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a href="instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="contact.html">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+          </div>
         </div>
-        </nav>
-        <div>
+        
+      </nav>
 <!-- BOOTSTRAP CAROUSEL -->
-            <div id="carouselExampleIndicators" class="carousel slide">
+      <div>
+        <div id="carouselExampleIndicators" class="carousel slide">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -104,13 +91,12 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
-            </div>
         </div>
+      </div>
     </header>
 <!-- fin de la partie header -->
-
 <!-- Ici on commence à définir les différentes sections qui composent le site -->
-    <main class="">
+    <main>
         <section class="w-100 p-5">
         <h2 class="text-center">LE STUDIO SPORT & COACHING</h2>
         <h2 class="text-center">SALLE DE SPORT, FITNESS</h2>
@@ -217,7 +203,6 @@
           </div>
       </div>
         </section>
-
         <section class="w-100 container-fluid bg-dark text-white p-5">
         <h2 class="text-center">STUDIO SPORT & COACHING, NOS PARTENAIRES</h2>
         <img class="d-block mx-auto p-3" src="ressources/images/bg_titre.jpg" alt="HR">
@@ -241,11 +226,30 @@
             </div>
         </div>
         </section>
-
     </main>
 <!-- fin de la main et des différentes sections -->
 <!-- Le footer du site -->
-    <footer>
+    <footer class="container-fluid w-100 mx-0 p-0">
+      <div class="card-group">
+        <div class="card">
+          <img src="https://picsum.photos/300/200?random=1" class="card-img-top radius" alt="...">
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/300/200?random=2" class="card-img-top radius" alt="...">
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/300/200?random=3" class="card-img-top radius" alt="...">
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/300/200?random=4" class="card-img-top radius" alt="...">
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/300/200?random=5" class="card-img-top radius" alt="...">
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/300/200?random=6" class="card-img-top radius" alt="...">
+        </div>
+      </div>
     </footer>
 <!-- fin du footer -->
 </body>
