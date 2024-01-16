@@ -126,3 +126,15 @@ li:hover {
     width: 120px;
     height: 36px;
 }
+
+.carousel-indicators button {
+    width: 3px !important;
+    border-radius: 100% !important;
+}
+
+.insta-img {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 120px;
+}
