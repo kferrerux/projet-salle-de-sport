@@ -2,7 +2,7 @@
 
 ![001](https://github.com/kferrerux/projet-salle-de-sport/assets/77007630/5f723f22-4bc3-4618-9c84-f5eab2ee2835)
 
-# Contexte du projet:
+# Contexte du vrai projet:
 Vous décidez de vous inscrire dans une nouvelle salle de sports qui vient d'ouvrir non loin de chez vous. Vous faites la rencontre du gérant et après quelques échanges, vous parlez de votre profession. Vous proposez de lui faire le** site internet de sa salle de sport**. Il vous explique qu'il a un petit budget mais que grâce à une connaissance il possède une maquette, un cahier des charges ainsi que les images. Vous aurez à réaliser ++un devis, crée les pages web en HTML/CSS/JS.++
 
 # Les besoins du client :
