@@ -7,9 +7,152 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
     crossorigin="anonymous">
-    <title>Salle de Sport - 404</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://kit.fontawesome.com/a95fff360e.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Salle de Sport - Accueil</title>
 </head>
 <body>
-
+<!-- ici on définie ce qui compose la partie "haute" le header (logo/nav/slider) -->
+    <header>
+        <nav class="fs-5 navbar navbar-expand-lg bg-transparent position-absolute z-2 w-100 p-3">
+          <div class="container-fluid p-0">
+            <a class="navbar-brand" href="index.html">
+              <img id="logo" src="ressources/images/logo.png" alt="Logo du site"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+              style="color: white">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#">L'EQUIPE</a>
+                </li>
+<!-- le dropdown ici -->
+                <div class="dropdown">
+                  <a class="nav-item nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    LES ACTIVITES
+                  </a>
+                  <ul class="dropdown-menu bg-black radius">
+                    <li><a class="dropdown-item text-white" href="#">LE CYCLING</a></li>
+                    <li><a class="dropdown-item text-white" href="#">LE TRAINING FONCTIONNEL</a></li>
+                    <li><a class="dropdown-item text-white" href="presentation.html">LE CROSSFIT</a></li>
+                    <li><a class="dropdown-item text-white" href="#">PERSONNAL TRAINING - COACH PERSONNEL</a></li>
+                  </ul>
+                </div>
+<!-- fin du dropdown -->
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#">NOS OFFRES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#">LE BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="contact.html">CONTACT</a>
+                </li>
+              </ul>
+              <div id="phone" class="mx-5">
+                <i class="fa-solid fa-mobile-screen-button text-white" style="font-size: smaller;"> 05 59 47 84 18</i>
+              </div>
+              <div class="mx-5" id="socials">
+                <a href="facebook.com">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="instagram.com">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="contact.html">
+                  <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+            </div>
+          </div>
+          
+        </nav>
+        <img src="ressources/images/visuel/visuel_3.jpg" class="img-fluid" alt="">
+    </header>
+<!-- fin de la partie haute header/slider -->
+<!-- fin de la main contenant le message d'erreur 404 -->
+    <main>
+        <section class="container-fluid p-5">
+            <h1 class="fs-1 text-center bg-black text-white">404</h1>
+            <p class="text-center">La page que vous cherchez n'existe pas ou n'a pas encore été créée.</p>
+        </section>    
+    </main>
+<!-- fin de la main contenant le message d'erreur 404 -->
+<!-- le footer du site -->
+    <footer class="container-fluid w-100 mx-0 p-0">
+<!-- Ceci est un feed "instagram" -->
+          <div class="card-group">
+            <div class="card">
+              <img src="https://picsum.photos/300/200?random=1" class="card-img-top radius" alt="...">
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/300/200?random=2" class="card-img-top radius" alt="...">
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/300/200?random=3" class="card-img-top radius" alt="...">
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/300/200?random=4" class="card-img-top radius" alt="...">
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/300/200?random=5" class="card-img-top radius" alt="...">
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/300/200?random=6" class="card-img-top radius" alt="...">
+            </div>
+          </div>
+<!-- fin du feed instagram -->
+<!-- ici la seconde partie du footer avec le résumé du site, les liens rapides -->
+          <div class="card-group w-100 container-fluid bg-dark text-white p-5">
+            <div class="card w-25 bg-dark text-white radius">
+              <div class="card-body">
+                <div class="d-flex flex-row justify-content-start align-items-start">
+                  <img class="me-5 mb-2" src="ressources/images/logo_footer.png" alt="">
+                    <h5 class="card-title">À PROPOS</h5>
+                </div>
+                  <p class="card-text">2018 © Studio Sport Biarritz
+                    Salle de sport, de fitness et de crossfit
+                    à Biarritz Pays basque.
+                    RCS : 000 000 000
+                    Mentions légales
+                  </p>
+                </div>
+              </div>
+            <div class="card w-25 bg-dark text-white radius">
+              <div class="card-body">
+                <h5 class="card-title">STUDIO SPORT CORPORATE</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Studio Center : créez votre studio</li>
+                    <li>Offres Spéciales C.E</li>
+                    <li>Devenir partenaire</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="card w-50 bg-dark text-white radius">
+              <div class="card-body">
+                <h5 class="card-title">FITNESS, CROSSFIT ET TRAINING AU PAYS BASQUE</h5>
+                <p class="card-text">Coach personnel de sport à Biarritz,<a href="#" class="text-reset">Coach personnel de sport à Anglet</a> , 
+                  Salle de BAB, Fitness à Biarritz, Sessions de Fitness à Anglet, Fitness sur le BAB,
+                Autre mot clé + ville, Autre mot clé + ville, Autre mot clé + ville</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-center align-items-center bg-black text-white p-2">
+            <div>
+              <p>Un site crée par <br>
+              <strong>L'AGENCE 364COM'</strong>
+              </p>
+            </div>
+            <img src="ressources/images/364.png" alt="">
+          </div>
+    </footer>
+<!-- fin du footer -->
 </body>
-</html
+</html>
