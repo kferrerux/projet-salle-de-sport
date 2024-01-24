@@ -57,7 +57,7 @@ function addClass(element, regex, value) {
 inputNom.addEventListener('input', (e) => {
     // Ci-dessous nous apellons la fonction 'addClass' avec pour paramètres le nom du champ concerné (inputNom),
     // La valeur de userRegex et nous pointons la valeur de e.target
-    addClass(inputNom, userRegex, e.target.value);
+    addClass(inputNom, userRegex, e.target.value); // Le e.target.value enregistre l'information de la saisie
     // Si le champ contenant l'ID "inputNom" contient la classe 'is-valid'
     if (inputNom.classList.contains('is-valid')) {
         // Alors la variable inputNomValid est vraie
@@ -70,14 +70,14 @@ inputNom.addEventListener('input', (e) => {
 })
 // Evènement sur le champ inputPrenom
 inputPrenom.addEventListener('input', (e) => {
-    // Ci-dessous nous apellons la fonction 'addClass' avec pour paramètres le nom du champ concerné (inputNom),
+    // Ci-dessous nous apellons la fonction 'addClass' avec pour paramètres le nom du champ concerné (inputPrenom),
     // La valeur de userRegex et nous pointons la valeur de e.target
     addClass(inputPrenom, userRegex, e.target.value);
-    // Si le champ contenant l'ID "inputNom" contient la classe 'is-valid'
+    // Si le champ contenant l'ID "inputPrenom" contient la classe 'is-valid'
     if (inputPrenom.classList.contains('is-valid')) {
-        // Alors la variable inputNomValid est vraie
+        // Alors la variable inputPrenomValid est vraie
         inputPrenomValid = true;
-    // Sinon et si l'élément contenant l'ID "inputNom" ne contient pas la classe 'is-valid'
+    // Sinon et si l'élément contenant l'ID "inputPrenom" ne contient pas la classe 'is-valid'
     } else {
         // Alors la variable inputNomValid est fausse
         inputPrenomValid = false;
@@ -85,64 +85,66 @@ inputPrenom.addEventListener('input', (e) => {
 })
 // Evènement sur le champ inputEmail
 inputEmail.addEventListener('input', (e) => {
-    // Ci-dessous nous apellons la fonction 'addClass' avec pour paramètres le nom du champ concerné (inputNom),
+    // Ci-dessous nous apellons la fonction 'addClass' avec pour paramètres le nom du champ concerné (inputEmail),
     // La valeur de userRegex et nous pointons la valeur de e.target
     addClass(inputEmail, emailRegex, e.target.value);
-    // Si le champ contenant l'ID "inputNom" contient la classe 'is-valid'
+    // Si le champ contenant l'ID "inputEmail" contient la classe 'is-valid'
     if (inputEmail.classList.contains('is-valid')) {
-        // Alors la variable inputNomValid est vraie
+        // Alors la variable inputEmailValid est vraie
         inputEmailValid = true;
-    // Sinon et si l'élément contenant l'ID "inputNom" ne contient pas la classe 'is-valid'
+    // Sinon et si l'élément contenant l'ID "inputEmail" ne contient pas la classe 'is-valid'
     } else {
-        // Alors la variable inputNomValid est fausse
+        // Alors la variable inputEmailValid est fausse
         inputEmailValid = false;
     }
 })
 // Evènement sur le champ inputSujet
 inputSujet.addEventListener('input', (e) => {
-    // Ci-dessous nous apellons la fonction 'addClass' avec pour paramètres le nom du champ concerné (inputNom),
+    // Ci-dessous nous apellons la fonction 'addClass' avec pour paramètres le nom du champ concerné (inputSujet),
     // La valeur de userRegex et nous pointons la valeur de e.target
     addClass(inputSujet, sujetRegex, e.target.value);
-    // Si le champ contenant l'ID "inputNom" contient la classe 'is-valid'
+    // Si le champ contenant l'ID "inputSujet" contient la classe 'is-valid'
     if (inputSujet.classList.contains('is-valid')) {
-        // Alors la variable inputNomValid est vraie
+        // Alors la variable inputSujetValid est vraie
         inputSujetValid = true;
-    // Sinon et si l'élément contenant l'ID "inputNom" ne contient pas la classe 'is-valid'
+    // Sinon et si l'élément contenant l'ID "inputSujet" ne contient pas la classe 'is-valid'
     } else {
-        // Alors la variable inputNomValid est fausse
+        // Alors la variable inputSujetValid est fausse
         inputSujetValid = false;
     }
 })
 // Evènement sur le champ inputMessage
 inputMessage.addEventListener('input', (e) => {
-    // Ci-dessous nous apellons la fonction 'addClass' avec pour paramètres le nom du champ concerné (inputNom),
+    // Ci-dessous nous apellons la fonction 'addClass' avec pour paramètres le nom du champ concerné (inputMessage),
     // La valeur de userRegex et nous pointons la valeur de e.target
     addClass(inputMessage, messageRegex, e.target.value);
-    // Si le champ contenant l'ID "inputNom" contient la classe 'is-valid'
+    // Si le champ contenant l'ID "inputMessage" contient la classe 'is-valid'
     if (inputMessage.classList.contains('is-valid')) {
-        // Alors la variable inputNomValid est vraie
+        // Alors la variable inputSujetValid est vraie
         inputMessageValid = true;
-    // Sinon et si l'élément contenant l'ID "inputNom" ne contient pas la classe 'is-valid'
+    // Sinon et si l'élément contenant l'ID "inputMessage" ne contient pas la classe 'is-valid'
     } else {
-        // Alors la variable inputNomValid est fausse
+        // Alors la variable inputSujetValid est fausse
         inputMessageValid = false;
     }
 })
 
-// A titre informatif
+// Evènement sur le champ inputTelephone
 //---------------------------------------------------------------------------------
 // Pour le téléphone, nous utilisons la méthode 'replace' pour remplacer le 0 par +33
 // Nous initialisons deux variables 'phoneNumber' prends valeur 0 et 'newPhoneNumber' viendra remplacer 'phoneNumber' (0 par +33)
 //---------------------------------------------------------------------------------
-let phoneNumber = '0';
-let newPhoneNumber = phoneNumber.replace(/^0/, '+33');
+// let phoneNumber = '0';
+// let newPhoneNumber = phoneNumber.replace(/^0/, '+33');
 // console.log(newPhoneNumber);
 
 // Evènement sur le champ inputTelephone
 inputTelephone.addEventListener('input', (e) => {
-// On initialise une variable tel dans laquelle on encapsule la valeur de l'évènement
-let tel = e.target.value;
-tel = tel.replace(/^0/, '+33'); // On va remplacer ce que l'utilisateur va écrire (ce dernier ne sera pas affiché)
+    // On initialise une variable tel dans laquelle on encapsule la valeur de l'évènement
+    let tel = e.target.value;
+    // On va remplacer ce que l'utilisateur va écrire
+    tel = tel.replace(/^0/, '+33');
+    tel = tel.replace(/\s/g, '');
     // Ci-dessous nous apellons la fonction 'addClass' avec pour paramètres le nom du champ concerné (inputNom),
     // La valeur de userRegex et nous pointons la valeur de e.target
     addClass(inputTelephone, phoneNumberRegex, tel);
@@ -157,3 +159,24 @@ tel = tel.replace(/^0/, '+33'); // On va remplacer ce que l'utilisateur va écri
     }
 })
 
+// Evènement sur la soumission du formulaire
+let message = 'Votre email a bien été envoyé, merci!';
+let form = document.querySelector('#formulaire');
+
+form.addEventListener("submit", (e) => {
+    if (inputNomValid && inputPrenomValid && inputTelephoneValid && inputEmailValid && inputSujetValid && inputMessageValid) {
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "username",
+            Password : "password",
+            To : 'them@website.com',
+            From : "you@isp.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+    } else {
+        alert('Les pré-requis ne sont pas respectés.');
+    }
+})
