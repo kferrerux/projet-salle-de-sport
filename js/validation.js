@@ -160,23 +160,41 @@ inputTelephone.addEventListener('input', (e) => {
 })
 
 // Evènement sur la soumission du formulaire
-let message = 'Votre email a bien été envoyé, merci!';
+// On point le formulaire
 let form = document.querySelector('#formulaire');
 
+// On initialise les variables sujet & message qui vont être liées à notre tableau d'objets SMTPJS
 form.addEventListener("submit", (e) => {
+    // Annulation du comportement par défaut du navigateur (soumission automatique)
+        e.preventDefault();
+    // Si tout les champs sont TRUE
     if (inputNomValid && inputPrenomValid && inputTelephoneValid && inputEmailValid && inputSujetValid && inputMessageValid) {
         Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "username",
-            Password : "password",
-            To : 'them@website.com',
-            From : "you@isp.com",
-            Subject : "This is the subject",
-            Body : "And this is the body"
+            // L'API prends le relais et l'interpolation vient récupérer les valeur des variables inputs du form
+            SecureToken : "23e5897f-f446-4c0d-99a0-53a7a71ea16d",
+            To : 'ismail.abdelhakk@gmail.com',
+            From : "ismail.abdelhakk@gmail.com",
+            Subject : `${inputSujet.value}`,
+            Body : `Vous avez reçu un message de la part de : 
+                    <br>
+                    ${inputNom.value} ${inputPrenom.value}
+                    <br>
+                    Informations du contact :
+                    <br>
+                    ${inputEmail.value} ${inputTelephone.value}
+                    <br>
+                    Contenu du message :
+                    <br>
+                    ${inputSujet.value}
+                    <br>
+                    ${inputMessage.value}`       
         }).then(
-          message => alert(message)
-        );
+            // Alors un message de confirmation d'envoi apparaît
+          message => alert(message, 'Votre email a bien été envoyé, merci!')
+          );
+          alert('Email envoyé! Merci!')
+    // Sinon erreur d'envoi de mail
     } else {
-        alert('Les pré-requis ne sont pas respectés.');
+        alert('Tout les champs ne sont pas remplis.');
     }
 })
