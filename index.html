@@ -1,312 +1,336 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
-      crossorigin="anonymous">
-      <link rel="stylesheet" href="css/style.css">
-      <script defer src="https://kit.fontawesome.com/a95fff360e.js" crossorigin="anonymous"></script>
-      <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-      <title>Salle de Sport - Accueil</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://kit.fontawesome.com/a95fff360e.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <title>Salle de Sport - Accueil</title>
+</head>
+
+<body>
   <!-- ici on définie ce qui compose la partie "haute" =  Le header (logo/nav/slider) -->
-    <header>
-  <!-- navbar -->
-      <nav class="fs-5 navbar navbar-expand-lg position-absolute z-2 w-100 p-3">
-        <div class="container-fluid p-0">
-          <a class="navbar-brand bg-transparent" href="index.html">
-            <img id="logo" src="ressources/images/logo.png" alt="Logo du site">
-          </a>
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white">
-            <span class="navbar-dark navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse mx-5 collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="404.html">L'EQUIPE</a>
-              </li>
-    <!-- le dropdown ici -->
-              <li class="nav-item">
-                <a class="nav-item nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  LES ACTIVITES
-                </a>
-                <ul id="dd-hover" class="dropdown-menu bg-dark radius">
-                  <li><a class="dropdown-item text-white" href="404.html">LE CYCLING</a></li>
-                  <li><a class="dropdown-item text-white" href="404.html">LE TRAINING FONCTIONNEL</a></li>
-                  <li><a class="dropdown-item text-white" href="presentation.html">LE CROSSFIT</a></li>
-                  <li><a class="dropdown-item text-white" href="404.html">PERSONNAL TRAINING - COACH PERSONNEL</a></li>
-                </ul>
-              </li>
-    <!-- fin du dropdown -->
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="404.html">NOS OFFRES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="404.html">LE BLOG</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="contact.html">CONTACT</a>
-              </li>
-            </ul>
-            <div id="phone" class="my-3">
-              <i class="fa-solid fa-mobile-screen-button text-white" style="font-size: smaller;" aria-hidden="true"> 05 59 47 84 18</i>
-            </div>
-            <div class="mx-5" id="socials">
-              <a href="facebook.com">
-                <i class="fa-brands fa-square-facebook" aria-hidden="true"></i>
+  <header>
+    <!-- navbar -->
+    <nav class="fs-5 navbar navbar-expand-lg position-absolute z-2 w-100 p-3">
+      <div class="container-fluid p-0">
+        <a class="navbar-brand bg-transparent" href="index.html">
+          <img id="logo" src="ressources/images/logo.png" alt="Logo du site">
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation" style="color: white">
+          <span class="navbar-dark navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse mx-5 collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="404.html">L'EQUIPE</a>
+            </li>
+            <!-- le dropdown ici -->
+            <li class="nav-item">
+              <a class="nav-item nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                LES ACTIVITES
               </a>
-              <a href="instagram.com">
-                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="contact.html">
-                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-              </a>
-            </div>
-            <div class="d-flex justify-content-center align-items-center" id="langs">
-              <a class="text-black" href="#">EN</a>
-            </div>
+              <ul id="dd-hover" class="dropdown-menu bg-dark radius">
+                <li><a class="dropdown-item text-white" href="404.html">LE CYCLING</a></li>
+                <li><a class="dropdown-item text-white" href="404.html">LE TRAINING FONCTIONNEL</a></li>
+                <li><a class="dropdown-item text-white" href="presentation.html">LE CROSSFIT</a></li>
+                <li><a class="dropdown-item text-white" href="404.html">PERSONNAL TRAINING - COACH PERSONNEL</a></li>
+              </ul>
+            </li>
+            <!-- fin du dropdown -->
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="404.html">NOS OFFRES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="404.html">LE BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <div id="phone" class="my-3">
+            <i class="fa-solid fa-mobile-screen-button text-white" style="font-size: smaller;" aria-hidden="true"> 05 59
+              47 84 18</i>
+          </div>
+          <div class="mx-5" id="socials">
+            <a href="facebook.com">
+              <i class="fa-brands fa-square-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="instagram.com">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="contact.html">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="d-flex justify-content-center align-items-center" id="langs">
+            <a class="text-black" href="#">EN</a>
           </div>
         </div>
-        
-      </nav>
-  <!-- bootstrap carousel -->
-      <div id="sm_media">
-        <div id="carouselExampleIndicators" class="carousel slide">
-              <div class="carousel-indicators z-1">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-              </div>
-              <div class="carousel-inner">
-                <h2 class="fs-4 z-1 position-absolute my-1 top-50 start-50 translate-middle text-white">2 inscriptions simultanées = Un 3ème abonnement de 6 mois offert!</h2>
-                <button type="button" class="z-1 position-absolute my-5 top-50 start-50 translate-middle btn btn-outline-light">PLUS D'INFOS</button>
-                <div class="carousel-item active">
-                  <img src="ressources/images/slider/slide_1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="ressources/images/slider/slide_2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="ressources/images/slider/slide_3.jpg" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-        </div>
       </div>
-    </header>
+
+    </nav>
+    <!-- bootstrap carousel -->
+    <div id="sm_media">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators z-1">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-label="Slide 1" aria-current="true"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+            class=""></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
+            class=""></button>
+        </div>
+        <div class="carousel-inner">
+          <h2 class="fs-4 z-1 position-absolute my-1 top-50 start-50 translate-middle text-white">2 inscriptions
+            simultanées = Un 3ème abonnement de 6 mois offert!</h2>
+          <a href="404.html"><button type="button"
+              class="z-1 position-absolute my-5 top-50 start-50 translate-middle btn btn-outline-light">PLUS
+              D'INFOS</button></a>
+          <div class="carousel-item active">
+            <img src="ressources/images/slider/slide_1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="ressources/images/slider/slide_2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="ressources/images/slider/slide_3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </header>
   <!-- fin de la partie haute header/slider -->
   <!-- ici on commence à définir les différentes sections qui composent le site -->
-    <main>
-  <!-- la première section -->
-        <section id="section_text" class="w-100 p-5">
-          <h2 id="h2-text" class="text-center">LE STUDIO SPORT & COACHING</h2>
-          <h2 class="text-center">SALLE DE SPORT, FITNESS</h2>
-          <img class="d-block mx-auto p-3" src="ressources/images/bg_titre.jpg" alt="HR">
-          <p>
-          Aujourd'hui, beaucoup de salle de sport vendent des abonnements 
-          où vous avez accès à tous les services du club (cours collectifs, plateu musculation... )
-          mais combien vous connaissent au point de connaitre vos êtes en bonne voie pour les atteindres ?</p>
-        
-          <p>Beaucoup de gens estiment être livrés à eux même dans ce genre de salle. Nous avons choisi la direction diamétralement opposée ! Notre seule priorité ? La qualité du service. Notre nouveau concept de salle de sport SUR MESURE trouve une solution adaptée à votre budget et vos disponibilités.
-          Nous oeuvrons pour créer une ambiance conviviale tout en vous aidant à vous dépasser dans l'effort et ce, pou maximiser vos chances d'obtenir des résultats. Les sportifs de Haut-Niveau ont des entraîneurs et des préparateurs physiques pour atteindre leurs objectifs. Alors, pourquoi pas vous ?</p>
+  <main>
+    <!-- la première section -->
+    <section id="section_text" class="w-100 p-5">
+      <h2 id="h2-text" class="text-center">LE STUDIO SPORT & COACHING</h2>
+      <h2 class="text-center">SALLE DE SPORT, FITNESS</h2>
+      <img class="d-block mx-auto p-3" src="ressources/images/bg_titre.jpg" alt="HR">
+      <p>
+        Aujourd'hui, beaucoup de salle de sport vendent des abonnements
+        où vous avez accès à tous les services du club (cours collectifs, plateu musculation... )
+        mais combien vous connaissent au point de connaitre vos êtes en bonne voie pour les atteindres ?</p>
 
-          <p>Vous voulez plus de Motivation, plus de Résultats, plus vite... Alors bienvenue au Studio Sport & Coaching!</p>
-        
-        </section>
-  <!-- fin de la première section -->
-  <!-- la seconde section -->
-        <section class="w-100">
-        <h2 class="text-center">LES ACTIVITÉS PROPOSÉES AU STUDIO SPORT BIARRITZ</h2>
-        <img class="d-block mx-auto p-3" src="ressources/images/bg_titre.jpg" alt="HR">
+      <p>Beaucoup de gens estiment être livrés à eux même dans ce genre de salle. Nous avons choisi la direction
+        diamétralement opposée ! Notre seule priorité ? La qualité du service. Notre nouveau concept de salle de sport
+        SUR MESURE trouve une solution adaptée à votre budget et vos disponibilités.
+        Nous oeuvrons pour créer une ambiance conviviale tout en vous aidant à vous dépasser dans l'effort et ce, pou
+        maximiser vos chances d'obtenir des résultats. Les sportifs de Haut-Niveau ont des entraîneurs et des
+        préparateurs physiques pour atteindre leurs objectifs. Alors, pourquoi pas vous ?</p>
 
-        <div class="container-fluid text-center m-auto">
-          <div id="activity" class="row">
-            <div id="card01" class="col-lg-3 col-md-6 card radius text-white">
-              <div class="card-body">
-                <img src="ressources/images/activites/icon_corde.png" alt="">
-                <h5 class="card-title">PERSONNAL TRAINING</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Facilis reprehenderit.
-                </p>
-                <a href="404.html" class="fw-bold text-white">EN SAVOIR PLUS</a>
-                <hr class="mx-auto hr-white">
-              </div>
-            </div>
-            <div id="card02" class="col-lg-3 col-md-6 card radius text-white">
-              <div class="card-body">
-                <img src="ressources/images/activites/icon_velo.png" alt="">
-                <h5 class="card-title">CYCLING</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Facilis reprehenderit.
-                </p>
-                <a href="404.html" class="fw-bold text-white">EN SAVOIR PLUS</a>
-                <hr class="mx-auto hr-white">
-              </div>
-            </div>
-            <div id="card03" class="col-lg-3 col-md-6 card radius text-white">
-              <div class="card-body">
-                <img src="ressources/images/activites/icon_poids.png" alt="">
-                <h5 class="card-title">TRAINING FONCTIONNEL</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Facilis reprehenderit.
-                </p>
-                <a href="404.html" class="fw-bold text-white">EN SAVOIR PLUS</a>
-                <hr class="mx-auto hr-white">
+      <p>Vous voulez plus de Motivation, plus de Résultats, plus vite... Alors bienvenue au Studio Sport & Coaching!</p>
 
-              </div>
+    </section>
+    <!-- fin de la première section -->
+    <!-- la seconde section -->
+    <section class="w-100">
+      <h2 class="text-center">LES ACTIVITÉS PROPOSÉES AU STUDIO SPORT BIARRITZ</h2>
+      <img class="d-block mx-auto p-3" src="ressources/images/bg_titre.jpg" alt="HR">
+
+      <div class="container-fluid text-center m-auto">
+        <div id="activity" class="row">
+          <div id="card01" class="col-lg-3 col-md-6 card radius text-white">
+            <div class="card-body">
+              <img src="ressources/images/activites/icon_corde.png" alt="">
+              <h5 class="card-title">PERSONNAL TRAINING</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis reprehenderit.
+              </p>
+              <a href="404.html" class="fw-bold text-white">EN SAVOIR PLUS</a>
+              <hr class="mx-auto hr-white">
             </div>
-            <div id="card04" class="col-lg-3 col-md-6 card radius text-white">
-              <div class="card-body">
-                <img src="ressources/images/activites/icon_alter.png" alt="">
-                <h5 class="card-title">CROSSFIT</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Facilis reprehenderit.
-                </p>
-                <a href="404.html" class="fw-bold text-white">EN SAVOIR PLUS</a>
-                <hr class="mx-auto hr-white">
-              </div>
+          </div>
+          <div id="card02" class="col-lg-3 col-md-6 card radius text-white">
+            <div class="card-body">
+              <img src="ressources/images/activites/icon_velo.png" alt="">
+              <h5 class="card-title">CYCLING</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis reprehenderit.
+              </p>
+              <a href="404.html" class="fw-bold text-white">EN SAVOIR PLUS</a>
+              <hr class="mx-auto hr-white">
+            </div>
+          </div>
+          <div id="card03" class="col-lg-3 col-md-6 card radius text-white">
+            <div class="card-body">
+              <img src="ressources/images/activites/icon_poids.png" alt="">
+              <h5 class="card-title">TRAINING FONCTIONNEL</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis reprehenderit.
+              </p>
+              <a href="404.html" class="fw-bold text-white">EN SAVOIR PLUS</a>
+              <hr class="mx-auto hr-white">
+
+            </div>
+          </div>
+          <div id="card04" class="col-lg-3 col-md-6 card radius text-white">
+            <div class="card-body">
+              <img src="ressources/images/activites/icon_alter.png" alt="">
+              <h5 class="card-title">CROSSFIT</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis reprehenderit.
+              </p>
+              <a href="404.html" class="fw-bold text-white">EN SAVOIR PLUS</a>
+              <hr class="mx-auto hr-white">
             </div>
           </div>
         </div>
-        </section>
-  <!-- fin de la seconde section -->        
-  <!-- la troisième section -->
-        <section class="w-100 p-5">
-        <h2 class="text-center">NOS DERNIÈRES ACTUALITÉS</h2>
-        <img class="d-block mx-auto p-3" src="ressources/images/bg_titre.jpg" alt="HR">
-
-        <div class="row">
-          <div class="card col-12 col-sm-4 col-md-4 col-lg-4  radius">
-            <img src="https://picsum.photos/300/200?random=1" class="card-img-top radius" alt="...">
-            <div class="card-body">
-              <h4>28 OCTOBRE 2018</h4>
-              <h5 class="card-title">Titre de l'actualité sur une ou deux lignes en majuscules </h5>
-              <p class="my-0 card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="404.html" class="text-black">Lire la suite</a>
-              <hr class="my-0 hr-black hr-defaut">
-            </div>
-          </div>
-          <div class="card card col-12 col-sm-4 col-md-4 col-lg-4  radius">
-            <img src="https://picsum.photos/300/200?random=2" class="card-img-top radius" alt="...">
-            <div class="card-body">
-              <h4>22 OCTOBRE 2018</h4>
-              <h5 class="card-title">Titre de l'actualité sur une ou deux lignes en majuscules</h5>
-              <p class="my-0 card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="404.html" class="text-black">Lire la suite</a>
-              <hr class="my-0 hr-hover">
-            </div>
-          </div>
-          <div class="card card col-12 col-sm-4 col-md-4 col-lg-4  radius">
-            <img src="https://picsum.photos/300/200?random=3" class="card-img-top radius" alt="...">
-            <div class="card-body">
-              <h4>18 OCTOBRE 2018</h4>
-              <h5 class="card-title">Titre de l'actualité sur une ou deux lignes en majuscules</h5>
-              <p class="my-0 card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="404.html" class="text-black">Lire la suite</a>
-              <hr class="my-0 mx-a hr-black hr-defaut">
-            </div>
-          </div>
       </div>
-        </section>
-  <!-- fin de la troisième section -->
-  <!-- la quatrième section -->
-        <section class="w-100 container-fluid bg-dark text-white p-5">
-        <h2 class="text-center">STUDIO SPORT & COACHING, NOS PARTENAIRES</h2>
-        <img class="d-block mx-auto p-3" src="ressources/images/bg_titre.jpg" alt="HR">
-        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        <a class="gold" href="404.html">CLIQUEZ-ICI</a> pour en savoir plus.</p>
-        <div class="d-flex flex-row justify-content-center flex-wrap">
-            <div>
-                <img class="footer-img" src="ressources/images/partenaires/mini.png" alt="">
-            </div>
-            <div>
-                <img class="footer-img" src="ressources/images/partenaires/massage.png" alt="">
-            </div>
-            <div>
-                <img class="footer-img" src="ressources/images/partenaires/tellechea.png" alt="">
-            </div>
-            <div>
-                <img class="footer-img" src="ressources/images/partenaires/ocean.png" alt="">
-            </div>
-            <div>
-                <img class="footer-img" src="ressources/images/partenaires/decathlon.png" alt="">
-            </div>
+    </section>
+    <!-- fin de la seconde section -->
+    <!-- la troisième section -->
+    <section class="w-100 p-5">
+      <h2 class="text-center">NOS DERNIÈRES ACTUALITÉS</h2>
+      <img class="d-block mx-auto p-3" src="ressources/images/bg_titre.jpg" alt="HR">
+
+      <div class="row">
+        <div class="card col-12 col-sm-4 col-md-4 col-lg-4  radius">
+          <img src="https://picsum.photos/300/200?random=1" class="card-img-top radius" alt="...">
+          <div class="card-body">
+            <h4>28 OCTOBRE 2018</h4>
+            <h5 class="card-title">Titre de l'actualité sur une ou deux lignes en majuscules </h5>
+            <p class="my-0 card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a href="404.html" class="text-black">Lire la suite</a>
+            <hr class="my-0 hr-black hr-defaut">
+          </div>
         </div>
-        </section>
-    </main>
+        <div class="card card col-12 col-sm-4 col-md-4 col-lg-4  radius">
+          <img src="https://picsum.photos/300/200?random=2" class="card-img-top radius" alt="...">
+          <div class="card-body">
+            <h4>22 OCTOBRE 2018</h4>
+            <h5 class="card-title">Titre de l'actualité sur une ou deux lignes en majuscules</h5>
+            <p class="my-0 card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a href="404.html" class="text-black">Lire la suite</a>
+            <hr class="my-0 hr-hover">
+          </div>
+        </div>
+        <div class="card card col-12 col-sm-4 col-md-4 col-lg-4  radius">
+          <img src="https://picsum.photos/300/200?random=3" class="card-img-top radius" alt="...">
+          <div class="card-body">
+            <h4>18 OCTOBRE 2018</h4>
+            <h5 class="card-title">Titre de l'actualité sur une ou deux lignes en majuscules</h5>
+            <p class="my-0 card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a href="404.html" class="text-black">Lire la suite</a>
+            <hr class="my-0 mx-a hr-black hr-defaut">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin de la troisième section -->
+    <!-- la quatrième section -->
+    <section class="w-100 container-fluid bg-dark text-white p-5">
+      <h2 class="text-center">STUDIO SPORT & COACHING, NOS PARTENAIRES</h2>
+      <img class="d-block mx-auto p-3" src="ressources/images/bg_titre.jpg" alt="HR">
+      <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        <a class="gold" href="404.html">CLIQUEZ-ICI</a> pour en savoir plus.
+      </p>
+      <div class="d-flex flex-row justify-content-center flex-wrap">
+        <div>
+          <img class="footer-img" src="ressources/images/partenaires/mini.png" alt="">
+        </div>
+        <div>
+          <img class="footer-img" src="ressources/images/partenaires/massage.png" alt="">
+        </div>
+        <div>
+          <img class="footer-img" src="ressources/images/partenaires/tellechea.png" alt="">
+        </div>
+        <div>
+          <img class="footer-img" src="ressources/images/partenaires/ocean.png" alt="">
+        </div>
+        <div>
+          <img class="footer-img" src="ressources/images/partenaires/decathlon.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
   <!-- fin de la main et des différentes sections composant le site -->
   <!-- ici Le FOOTER du site -->
-    <footer class="container-fluid w-100 mx-0 p-0">
-  <!-- Ceci est un feed "instagram" -->
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-0">
-        <div class="col"><img src="https://picsum.photos/300/200?random=1" class="card-img-top radius" alt="..."></div>
-        <div class="col"><img src="https://picsum.photos/300/200?random=2" class="card-img-top radius" alt="..."></div>
-        <div class="col"><img src="https://picsum.photos/300/200?random=3" class="card-img-top radius" alt="..."></div>
-        <div class="col"><img src="https://picsum.photos/300/200?random=4" class="card-img-top radius" alt="..."></div>
-        <div class="col"><img src="https://picsum.photos/300/200?random=5" class="card-img-top radius" alt="..."></div>
-        <div class="col"><img src="https://picsum.photos/300/200?random=6" class="card-img-top radius" alt="..."></div>
-      </div>
-  <!-- fin du feed instagram -->
-  <!-- ici la seconde partie du footer avec le résumé du site, les liens rapides -->
-      <div class="bg-dark text-white p-5">
-        <div class="row">
-          <div class="bg-dark card col-12 col-sm-4 col-md-4 col-lg-3  text-white radius">
-            <div class="card-body">
-              <div class="d-flex flex-row justify-content-start align-items-start">
-                <img class="me-5 mb-2" src="ressources/images/logo_footer.png" alt="">
-                  <h5 class="card-title">À PROPOS</h5>
-              </div>
-                <p class="card-text">2018 © Studio Sport Biarritz
-                  Salle de sport, de fitness et de crossfit
-                  à Biarritz Pays basque.
-                  RCS : 000 000 000
-                  Mentions légales
-                </p>
-              </div>
+  <footer class="container-fluid w-100 mx-0 p-0">
+    <!-- Ceci est un feed "instagram" -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-0">
+      <div class="col"><img src="https://picsum.photos/300/200?random=1" class="card-img-top radius" alt="..."></div>
+      <div class="col"><img src="https://picsum.photos/300/200?random=2" class="card-img-top radius" alt="..."></div>
+      <div class="col"><img src="https://picsum.photos/300/200?random=3" class="card-img-top radius" alt="..."></div>
+      <div class="col"><img src="https://picsum.photos/300/200?random=4" class="card-img-top radius" alt="..."></div>
+      <div class="col"><img src="https://picsum.photos/300/200?random=5" class="card-img-top radius" alt="..."></div>
+      <div class="col"><img src="https://picsum.photos/300/200?random=6" class="card-img-top radius" alt="..."></div>
+    </div>
+    <!-- fin du feed instagram -->
+    <!-- ici la seconde partie du footer avec le résumé du site, les liens rapides -->
+    <div class="bg-dark text-white p-5">
+      <div class="row">
+        <div class="bg-dark card col-12 col-sm-4 col-md-4 col-lg-3  text-white radius">
+          <div class="card-body">
+            <div class="d-flex flex-row justify-content-start align-items-start">
+              <img class="me-5 mb-2" src="ressources/images/logo_footer.png" alt="">
+              <h5 class="card-title">À PROPOS</h5>
             </div>
-          <div class="card col-12 col-sm-4 col-md-4 col-lg-3 bg-dark text-white radius">
-            <div class="card-body">
-              <h5 class="card-title">STUDIO SPORT CORPORATE</h5>
-              <div class="card-text">
-                <ul>
-                  <li>Studio Center : créez votre studio</li>
-                  <li>Offres Spéciales C.E</li>
-                  <li>Devenir partenaire</li>
-                </ul>
-              </div>
+            <p class="card-text">2018 © Studio Sport Biarritz
+              Salle de sport, de fitness et de crossfit
+              à Biarritz Pays basque.
+              RCS : 000 000 000
+              Mentions légales
+            </p>
+          </div>
+        </div>
+        <div class="card col-12 col-sm-4 col-md-4 col-lg-3 bg-dark text-white radius">
+          <div class="card-body">
+            <h5 class="card-title">STUDIO SPORT CORPORATE</h5>
+            <div class="card-text">
+              <ul>
+                <li>Studio Center : créez votre studio</li>
+                <li>Offres Spéciales C.E</li>
+                <li>Devenir partenaire</li>
+              </ul>
             </div>
           </div>
-          <div class="card col-12 col-sm-4 col-md-4 col-lg-6 bg-dark text-white radius">
-            <div class="card-body">
-              <h5 class="card-title">FITNESS, CROSSFIT ET TRAINING AU PAYS BASQUE</h5>
-              <p class="card-text">Coach personnel de sport à Biarritz,<a href="#" class="text-reset">Coach personnel de sport à Anglet</a> , 
-                Salle de BAB, Fitness à Biarritz, Sessions de Fitness à Anglet, Fitness sur le BAB,
+        </div>
+        <div class="card col-12 col-sm-4 col-md-4 col-lg-6 bg-dark text-white radius">
+          <div class="card-body">
+            <h5 class="card-title">FITNESS, CROSSFIT ET TRAINING AU PAYS BASQUE</h5>
+            <p class="card-text">Coach personnel de sport à Biarritz,<a href="#" class="text-reset">Coach personnel de
+                sport à Anglet</a> ,
+              Salle de BAB, Fitness à Biarritz, Sessions de Fitness à Anglet, Fitness sur le BAB,
               Autre mot clé + ville, Autre mot clé + ville, Autre mot clé + ville</p>
-            </div>
           </div>
         </div>
       </div>
-      <div class="d-flex flex-row justify-content-center align-items-center bg-black text-white p-2">
-        <div>
-          <p>Un site crée par <br>
+    </div>
+    <div class="d-flex flex-row justify-content-center align-items-center bg-black text-white p-2">
+      <div>
+        <p>Un site crée par <br>
           <strong>L'AGENCE 364COM'</strong>
-          </p>
-        </div>
-        <img src="ressources/images/364.png" alt="">
+        </p>
       </div>
-    </footer>
+      <img src="ressources/images/364.png" alt="">
+    </div>
+  </footer>
   <!-- Fin du footer -->
-  </body>
+</body>
+
 </html>
